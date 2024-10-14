@@ -16,6 +16,8 @@ public class App {
         int valorBuscado = 50418;
         //metodosBusqueda.printArreglo(arreglo);
 
+
+        
         long startTimeS = System.nanoTime();
         int posicion = metodosBusqueda.busquedaSecuencial(arreglo, 50418);
         if (posicion != -1) {
@@ -23,6 +25,7 @@ public class App {
         } else {
             System.out.println("El valor no se ha encontrado 404");
         }
+        
         long endTimeS = System.nanoTime();
         long totalTimeS = endTimeS - startTimeS;
         System.out.println(totalTimeS);
@@ -34,6 +37,7 @@ public class App {
         } else {
             System.out.println("El valor no se ha encontrado 404");
         }
+        
         long endTimeB = System.nanoTime();
         long totalTimeB = endTimeB - startTimeB;
         System.out.println(totalTimeB);
